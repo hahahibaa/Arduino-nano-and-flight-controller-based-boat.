@@ -1,0 +1,42 @@
+#include <Servo.h>
+
+Servo esc1;
+Servo esc2;
+Servo rudder;
+
+int throttlePin = 2;
+int steeringPin = 3;
+
+int throttle;
+int steering;
+
+void setup() {
+
+  esc1.attach(9);
+  esc2.attach(10);
+  rudder.attach(6);
+
+  pinMode(throttlePin, INPUT);
+  pinMode(steeringPin, INPUT);
+
+  // Arm ESC
+  esc1.writeMicroseconds(1000);
+  esc2.writeMicroseconds(1000);
+
+  delay(3000);
+}
+
+void loop() {
+
+  throttle = pulseIn(throttlePin, HIGH, 25000);
+  steering = pulseIn(steeringPin, HIGH, 25000);
+
+  if (throttle == 0) throttle = 1000;
+  if (steering == 0) steering = 1500;
+
+  esc1.writeMicroseconds(throttle);
+  esc2.writeMicroseconds(throttle);
+
+  rudder.writeMicroseconds(steering);
+
+}
