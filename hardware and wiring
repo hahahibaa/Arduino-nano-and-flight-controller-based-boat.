@@ -1,0 +1,27 @@
+⚙️ Hardware Components
+Component	Purpose
+Arduino Nano	Control unit
+FlySky Receiver	Remote control signal input
+2 × Drone Brushless Motors (~10k RPM)	Propulsion
+2 × ESC (Electronic Speed Controllers)	Motor control
+Servo Motor	Rudder steering
+Bicycle Spokes	Propeller shafts
+Custom Metal Propellers	Water propulsion
+Thermocol Hull	Boat structure
+LiPo Battery	Power source
+
+
+🔌 Wiring Overview
+ESC Connections
+ESC 1 Signal → Arduino D9
+ESC 2 Signal → Arduino D10
+ESC GND → Arduino GND
+Receiver Connections
+Throttle Channel → Arduino D2
+Steering Channel → Arduino D3
+VCC → 5V
+GND → GND
+Rudder Servo
+Servo Signal → Arduino D6
+Servo VCC → 5V
+Servo GND → GND
