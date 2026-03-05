@@ -1,0 +1,21 @@
+This project documents the design and construction of a DIY high-speed RC boat powered by brushless drone motors. The objective was to experiment with low-cost propulsion systems and improvised mechanical fabrication techniques to build a functional remote-controlled water vehicle.
+
+The propulsion system uses two high-RPM (~10,000 RPM) drone brushless motors, each connected to a custom propeller shaft fabricated using bicycle spokes. The propellers were handmade from thin metal sheets that were cut and bent to form blade geometry, allowing experimentation with thrust and efficiency.
+
+The boat hull was constructed using thermocol (expanded polystyrene foam) due to its lightweight and buoyant properties.
+
+Motor control is handled using brushless ESCs (Electronic Speed Controllers) connected to an Arduino Nano, which receives signals from a FlySky RC receiver. Steering is achieved through a servo-based rudder mechanism, allowing directional control of the boat.
+
+This project demonstrates practical concepts in:
+
+DIY propulsion systems
+
+Brushless motor control
+
+ESC interfacing with Arduino
+
+RC receiver signal processing
+
+Mechanical prototyping using simple materials
+
+  
