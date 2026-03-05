@@ -1,0 +1,79 @@
+Boat Stability & Buoyancy Calculation
+
+Estimated total mass of the boat system:
+
+Boat mass ≈ 400–500 g
+Average mass used for calculation ≈ 0.45 kg
+
+According to Archimedes’ Principle, the buoyant force equals the weight of the displaced water.
+
+Density of water:
+
+ρ = 1000 kg/m³
+
+Required displaced volume:
+
+V = mass / density
+V = 0.45 / 1000
+V = 0.00045 m³
+
+Convert cubic meters to liters:
+
+1 m³ = 1000 L
+
+0.00045 × 1000 = 0.45 L
+
+Required displacement ≈ 0.45 liters
+
+This means the boat must displace about 450 mL of water to float, which is easily achieved using a thermocol hull due to its very low density.
+
+Motor RPM Calculation
+
+Motor specification:
+
+Motor KV = 930 KV
+
+KV means RPM per volt.
+
+Motor RPM is calculated as:
+
+RPM = KV × Voltage
+
+Using a 3S LiPo battery (11.1V)
+
+RPM = 930 × 11.1
+RPM ≈ 10,323 RPM
+
+So the motor spins at roughly 10k RPM under no load.
+
+Boat Speed Estimation
+
+Assuming a small DIY propeller pitch of about 4 cm per revolution.
+
+Convert pitch to meters:
+
+4 cm = 0.04 m
+
+Distance moved per revolution = 0.04 m
+
+Speed formula:
+
+Speed = (RPM × pitch) / 60
+
+Speed = (10323 × 0.04) / 60
+Speed = 412.92 / 60
+Speed ≈ 6.88 m/s
+
+Convert to km/h:
+
+1 m/s = 3.6 km/h
+
+6.88 × 3.6 ≈ 24.7 km/h
+
+Theoretical speed ≈ 25 km/h
+
+Due to drag, propeller inefficiency, and water resistance, the practical speed is usually 50–70% of theoretical speed.
+
+Estimated real-world speed:
+
+≈ 12–18 km/h
